@@ -18,7 +18,7 @@ Include jobs widgets js file
 In the additional inline `<script></script>` or another js file in onload callback create `JobRoll` js object with proper search parameters. 
 
 
-Do not forget to include custom css rules. Job roll content is added dynamically to DOM and you have full control over styles. You can start with [basic jobroll css styling][jobroll-css].
+Do not forget to include custom css rules from https://dj6uj9i1z079.cloudfront.net/jobroll_widget.css. Job roll content is added dynamically to DOM and you have full control over styles. You can start with [basic jobroll css styling][jobroll-css].
 
 ### Basic usage
 
@@ -33,15 +33,9 @@ function initJobRoll(){
      
      // define search paramters, all properties are optional
      var search = {
-        page_size: 5,
+        page_size: 10,
         page: 1,
-        keywords: 'test', 
-        location: {
-            city: 'Toronto', 
-            country: 'CA',
-        }, 
-        job_types: [{slug: 'contract'}, {slug: 'full_time'}],  //Not working
-        companies: [{name: "Richmond Company"}], 		//Not working
+        companies: [{name: "Richmond Company"}],
         categories: [{name: "Advertising"}]
      }
 
