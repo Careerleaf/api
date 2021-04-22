@@ -36,7 +36,8 @@ function initJobRoll(){
         page_size: 10,
         page: 1,
         companies: [{name: "Richmond Company"}],
-        categories: [{name: "Advertising"}]
+        categories: [{name: "Advertising"}, {name: "Accounting"}],
+        jobtypes: [{name: "Full-Time"}]
      }
 
      // show jobs on the page, first paramter is a container: selector or DOM element
