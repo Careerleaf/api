@@ -35,6 +35,8 @@ Note: the following is not a valid *JSON* document, given that it has comments. 
       "site_url": "https://abc.com",
       "old_id": "abc123", //required
       "desc": "ABC Inc description",
+      "is_ats_enabled": false,
+      "is_active": true
       "billing_address":{
         "city": "Miami",
         "fax": "+1 323 555 1234",
@@ -61,7 +63,8 @@ Note: the following is not a valid *JSON* document, given that it has comments. 
         }],
         "companies":[
         {
-          "name": "ABC Consultancy", //required
+          "name": "ABC Consultancy", //required,
+          "code": "ALBE-001",
           "url": "https://abcconsultancy.com",
           "desc": "Description for ABC Consultancy", //company description
           "is_default": 1, //Default company
@@ -69,6 +72,7 @@ Note: the following is not a valid *JSON* document, given that it has comments. 
         },
          {
           "name": "ABC Exports", //required
+          "code": "ALBE-002",
           "url": "https://abcexports.com",
           "desc": "Description for ABC Exports", //company description
           "is_default": 0
@@ -101,6 +105,8 @@ Note: the following is not a valid *JSON* document, given that it has comments. 
    "created_on": "2019-08-28T05:26:03.848",
    "def_company": "ABC Consultancy",
    "id": "5d66106b0640fd7805f807e2",
+   "is_ats_enabled": false,
+   "is_active": true,
    "billing_address": {
       "city": "Miami",
       "country": "United States",
@@ -114,9 +120,9 @@ Note: the following is not a valid *JSON* document, given that it has comments. 
       "street2": ""
     },
    "companies": [
-      	{"desc": "ABC Inc description", "name": "ABC Inc", "url": ""},
-      	{"desc": "Description for ABC Exports","name": "ABC Exports","url": "https://abcexports.com"},
-      	{"desc": "Description for ABC Consultancy", "name": "ABC Consultancy","url": "https://abcconsultancy.com"},
+      	{"desc": "ABC Inc description", "name": "ABC Inc", "url": "","code":"ABC-001"},
+      	{"desc": "Description for ABC Exports","name": "ABC Exports","url": "https://abcexports.com","code":"ABC-001"},
+      	{"desc": "Description for ABC Consultancy", "name": "ABC Consultancy","url": "https://abcconsultancy.com","code":"ABC-002"},
   	  ],
    "users": [
       	{"first_name": "Admin", "id": "5d66106c0640fd7805f807e6", "last_name": "V","access_group": "admin", "email": "admin@abc.com"},
@@ -131,6 +137,8 @@ Note: the following is not a valid *JSON* document, given that it has comments. 
    "created_on": "2018-08-28T05:26:03.848",
    "def_company": "XYZ Consultancy",
    "id": "5d63456b0640fd7805f807e2",
+    "is_ats_enabled": false,
+    "is_active": true,
    "billing_address": {
       "city": "Toronto",
       "country": "Canada",
@@ -145,8 +153,8 @@ Note: the following is not a valid *JSON* document, given that it has comments. 
     },
    "companies": [
         {"desc": "", "name": "XYZ Inc", "url": ""},
-        {"desc": "Description for XYZ Exports","name": "XYZ Exports","url": "https://xyzexports.com"},
-        {"desc": "Description for XYZ Consultancy", "name": "XYZ Consultancy","url": "https://xyzconsultancy.com"},
+        {"desc": "Description for XYZ Exports","name": "XYZ Exports","url": "https://xyzexports.com","code":"XYZ-001"},
+        {"desc": "Description for XYZ Consultancy", "name": "XYZ Consultancy","url": "https://xyzconsultancy.com","code":"XYZ-002"},
       ],
    "users": [
         {"first_name": "Admin", "id": "5d66106c0646665f807e6", "last_name": "V","access_group": "admin", "email": "root@xyz.com"},
