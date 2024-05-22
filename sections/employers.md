@@ -73,7 +73,14 @@ Note: the following is not a valid *JSON* document, given that it has comments. 
           "desc": "Description for ABC Exports", //company description
           "is_default": 0
         }
-        ]
+        ],
+        "inviter":{
+                "email": "davidsmith@example.com",
+                "first_name": "David",
+                "last_name": "Smith"
+                },
+        "is_ats_enabled": true,
+        "is_active": true
 }
 ```
 
@@ -101,6 +108,8 @@ Note: the following is not a valid *JSON* document, given that it has comments. 
    "created_on": "2019-08-28T05:26:03.848",
    "def_company": "ABC Consultancy",
    "id": "5d66106b0640fd7805f807e2",
+   "is_ats_enabled": false,
+   "is_active": true,
    "billing_address": {
       "city": "Miami",
       "country": "United States",
@@ -131,6 +140,8 @@ Note: the following is not a valid *JSON* document, given that it has comments. 
    "created_on": "2018-08-28T05:26:03.848",
    "def_company": "XYZ Consultancy",
    "id": "5d63456b0640fd7805f807e2",
+   "is_ats_enabled": false,
+   "is_active": true
    "billing_address": {
       "city": "Toronto",
       "country": "Canada",
