@@ -68,7 +68,9 @@ Note: the following is not a valid *JSON* document, given that it has comments. 
           "url": "https://abcconsultancy.com",
           "desc": "Description for ABC Consultancy", //company description
           "is_default": 1, //Default company
-          "logo_url": "https://i2.wp.com/storage.whmcs.community/monthly_2017_09/T.png.f6c2896bc17da48204db15019ed38915.png"
+          "logo_url": "https://i2.wp.com/storage.whmcs.community/monthly_2017_09/T.png.f6c2896bc17da48204db15019ed38915.png",
+          "custom_fields": {"established": "1985", "rank": 2, "location": "India", "sister-companies": ["abc1", "abc2"]},
+      	  "custom_search_fields": {"job-location": "US", "type": ['non-profit', 'foreign']}
         },
          {
           "name": "ABC Exports", //required
@@ -122,7 +124,9 @@ Note: the following is not a valid *JSON* document, given that it has comments. 
    "companies": [
       	{"desc": "ABC Inc description", "name": "ABC Inc", "url": "","code":"ABC-001"},
       	{"desc": "Description for ABC Exports","name": "ABC Exports","url": "https://abcexports.com","code":"ABC-001"},
-      	{"desc": "Description for ABC Consultancy", "name": "ABC Consultancy","url": "https://abcconsultancy.com","code":"ABC-002"},
+      	{"desc": "Description for ABC Consultancy", "name": "ABC Consultancy","url": "https://abcconsultancy.com","code":"ABC-002",
+        "custom_fields": {"established": "1985", "rank": 2, "location": "India", "sister-companies": ["abc1", "abc2"]},
+        "custom_search_fields": {"job-location": "US", "type": ['non-profit', 'foreign']}},
   	  ],
    "users": [
       	{"first_name": "Admin", "id": "5d66106c0640fd7805f807e6", "last_name": "V","access_group": "admin", "email": "admin@abc.com"},
